@@ -23,19 +23,16 @@ searchButton.addEventListener("click", function () {
       const windSpeed = data.wind.speed;
       const windDegree = data.wind.deg;
 
-      // Update the city name
+      //update UI
+
       document.querySelector(".city-name").innerHTML = `Weather in ${name}`;
 
-      // Update the temperature
       document.querySelector(".temperature").innerHTML = `${temperature}℃`;
 
-      // Update the weather condition
       document.querySelector(".description").innerHTML = condition;
 
-      // Update the humidity
       document.querySelector(".humidity").innerHTML = `Humidity: ${humidity}%`;
 
-      // Update the wind speed and direction
       document.querySelector(".wind").innerHTML = `Windspeed ${windSpeed}km/h`;
     })
     .catch((error) => {
